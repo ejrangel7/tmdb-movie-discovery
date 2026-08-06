@@ -33,15 +33,35 @@ movie-app/
 
 ## Run locally
 
-This is a client-side application. Clone the repository and serve the project directory with any local static web server.
+This is a client-side application. Clone the repository and serve the project directory with any local static web server. Node.js and Python are not part of the application; they are only optional tools for starting a local server. Use either option below.
 
-Example with Python:
+### Option 1 — Node.js (recommended)
+
+If Node.js and npm are installed:
 
 ```bash
-python -m http.server 8000
+npx serve .
+```
+
+Open the local address displayed in the terminal, commonly [http://localhost:3000](http://localhost:3000).
+
+### Option 2 — Python
+
+On Windows, if Python is installed:
+
+```bash
+py -m http.server 8000
+```
+
+On macOS or Linux, if Python 3 is installed:
+
+```bash
+python3 -m http.server 8000
 ```
 
 Then open [http://localhost:8000](http://localhost:8000).
+
+Only one of these options is required.
 
 ## What this project demonstrates
 
